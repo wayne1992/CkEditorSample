@@ -5,8 +5,14 @@
 
 CKEDITOR.editorConfig = function (config) {
 
-    config.skin = 'moono-dark';
+    config.htmlEncodeOutput = true; //輸入資料執行 htmlEncode
 
+    config.skin = 'moono-dark'; //指定皮膚
+
+
+    /**
+     * 客製化區塊
+     */
     config.toolbarGroups = [
         { name: 'document', groups: ['mode', 'document', 'doctools'] },
         { name: 'clipboard', groups: ['clipboard', 'undo'] },
