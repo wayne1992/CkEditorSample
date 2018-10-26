@@ -32,4 +32,13 @@ CKEDITOR.editorConfig = function (config) {
     ];
 
     config.removeButtons = 'Replace,SelectAll,Scayt,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,NumberedList,BulletedList,Indent,Outdent,Blockquote,CreateDiv,BidiLtr,BidiRtl,Language,Unlink,Anchor,Flash,Table,HorizontalRule,Smiley,SpecialChar,PageBreak,Iframe';
+
+    /**
+     * CkFinder 設定
+     */
+    config.filebrowserBrowseUrl = '/Scripts/ckfinder/ckfinder.html';
+    config.filebrowserImageBrowseUrl = '/Scripts/ckfinder/ckfinder.html?Types=Images'; //增加路徑後會出現上傳按鈕
+
+    CKFinder.setupCKEditor(null, '/Scripts/ckfinder/'); // 指定 CkFinder 目錄位置
+
 };
