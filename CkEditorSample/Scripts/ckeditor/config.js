@@ -6,9 +6,10 @@
 CKEDITOR.editorConfig = function (config) {
 
     config.htmlEncodeOutput = true; //輸入資料執行 htmlEncode
-
+    config.languages = 'zh'; //指定語系
     config.skin = 'moono-dark'; //指定皮膚
-
+    config.removeDialogTabs = 'image:advanced;link:advanced'; //移除上傳圖片視窗中進接標籤
+    config.image_previewText = 'Image'; //自訂預覽圖片區塊文字(若要淨空ckeditor/plugins/image/dialogs/image.js搜尋config.image_previewText|| 刪除或者後假字敘述)
 
     /**
      * 客製化區塊
